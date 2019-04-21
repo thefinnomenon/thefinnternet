@@ -36,7 +36,6 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1",
     "install": "^0.12.2",
     "prettier": "^1.17.0"
   },
