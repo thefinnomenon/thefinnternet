@@ -30,7 +30,8 @@ function Bio() {
               style={{
                 marginRight: rhythm(1 / 2),
                 marginBottom: 0,
-                minWidth: 50,
+                minWidth: 100,
+                minHeight: 100,
                 borderRadius: `100%`,
               }}
               imgStyle={{
@@ -38,12 +39,20 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+              Written by <strong>{author}</strong>, a software consultant from
+              Boston, MA who works with React, React-Native, and Typescript. He
+              can sometimes be found crossing enemy lines to work on the backend
+              with Node, GraphQL, and Postgres.
+              <br />
+              <a
+                href={`https://github.com/${social.github}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Checkout his work on github
               </a>
+              <span> & </span>
+              <a href={`mailto:${social.email}`}>get in touch</a>
             </p>
           </div>
         )
@@ -65,7 +74,8 @@ const bioQuery = graphql`
       siteMetadata {
         author
         social {
-          twitter
+          github
+          email
         }
       }
     }
