@@ -3,9 +3,6 @@ title: React-Native Styling
 date: "2019-08-28"
 description: How to add some style to your React-Native apps.
 ---
-
-# Styling in React-Native
-
 Nobody likes ugly apps, that's where styling comes in! There are two ways to style your React-Native app; StyleSheet and CSS-In-JS. There are pros and cons to each but in the end it is mostly a choice of preference. This post will cover them both, recreating the following design for each one.
 
 ![Example App Screenshot](./stylin.png "Example App Screenshot")
