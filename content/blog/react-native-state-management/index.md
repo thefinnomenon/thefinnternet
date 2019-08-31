@@ -321,12 +321,12 @@ Then, there are two ways to access the state from the store.
 
 ```javascript
 import { connect } from 'react-redux';
-import { INCREMENT } from '../constants/action_types';
+import { increment } from '../actions';
 
 class Counter extends Component {
   increment = () => {
-  	 // Dispatch INCREMENT action
-    this.props.dispatch({ type: INCREMENT });
+  	 // Dispatch increment action
+    this.props.increment();
   }
 
   render() {
@@ -349,17 +349,22 @@ function mapStateToProps(state) {
   };
 }
 
+// An object of action creators to add to the props
+const mapDispatchToProps = {
+	increment,
+};
+
 // Wrapping your component in connect puts the results of
-// mapStateToProps and the dispatch function into the
-// components props
-export default connect(mapStateToProps)(Counter);
+// mapStateToProps, mapDispatchToProps and the dispatch 
+// function into the components props
+export default connect(mapStateToProps, mapDispatchToProps)(Counter);
 ```
 
 The newer way utilizes hooks so it can only be done in functional components.
 
 ```javascript
 import { useSelector, useDispatch } from 'react-redux';
-import { INCREMENT } from '../constants/action_types';
+import { increment } from '../actions';
 
 const App = props => {
 	// Get counter from the state store
@@ -370,15 +375,13 @@ const App = props => {
   return (
     <View>
         { counter }
-        <Button onPress={ () => dispatch({ type: INCREMENT }) }>
+        <Button onPress={ () => dispatch(increment) }>
         	increase
         </Button>
     </View>
   );
 }
 ```
-
-As you can see the hook version is much more clean, and readable so it is definitely the preferred method.
 
 ## Pros
 - Methodical and well structured state management
