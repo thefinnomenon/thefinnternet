@@ -1,6 +1,6 @@
 ---
 title: Testing & CI/CD in JavaScript Projects
-date: "2019-08-31"
+date: "2019-09-6"
 description: JavaScript testing best practices.
 ---
 > “If you don’t like unit testing your product, most likely your customers won’t like to test it either.” - Anonymous
