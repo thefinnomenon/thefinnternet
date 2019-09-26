@@ -272,3 +272,6 @@ const Subtitle = styled.Text`
   font-size: 18;
 `
 ```
+
+# Conclusion
+[Checkout This Project's Code On Github](https://github.com/thefinnomenon/react-native-styling)
