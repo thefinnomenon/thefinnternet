@@ -48,11 +48,7 @@ Download `google-services.json` and add it to the app folder of your Android pro
 
 ### Register iOS
 
-TODO
-
-#### Download google-services.json
-
-TODO
+Essentially the same as Android but grab the bundle id from the project in XCode.
 
 # Android
 
