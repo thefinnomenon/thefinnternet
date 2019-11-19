@@ -7,7 +7,7 @@ description: Redoing my original navigation post with the new react-navigation v
 [Same post for react-navigation v4](https://thefinnternet.com/react-native-routing/)
 
 # Introduction
-One of the most important aspects of any application is navigation. Unless your application is truly one single screen, your user is going to have to click to navigate around and this requires a good navigation library. There are a few popular options in the React-Native world but the most popular, and the one recommended in Facebook’s React-Native documentation, is React Navigation. The library just underwent a huge rewrite with v5 which is currently in **alpha**. but we will use this is the library throughout this post and cover how to use it for common navigation scenarios.
+One of the most important aspects of any application is navigation. Unless your application is truly one single screen, your user is going to have to click to navigate around and this requires a good navigation library. There are a few popular options in the React-Native world but the most popular, and the one recommended in Facebook’s React-Native documentation, is React Navigation. The library just underwent a huge rewrite with v5 which is currently in **alpha**, but we will use this is the library throughout this post and cover how to use it for common navigation scenarios.
 
 >**IMPORTANT NOTE**
 >
