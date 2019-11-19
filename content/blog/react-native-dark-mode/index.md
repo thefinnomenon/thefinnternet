@@ -82,11 +82,21 @@ public class MainActivity extends ReactActivity {
 ```javascript
 // index.d.ts
 
-type ThemeMode = 'light' | 'dark';
+export type ThemeMode = 'light' | 'dark';
 
-interface ThemeContext {
+export interface ThemeContext {
   mode: ThemeMode;
-  toggle(): void;
+  setMode(mode: ThemeMode): void;
+}
+
+export interface Theme {
+  theme: {
+    background: string;
+    border: string;
+    backgroundAlt: string;
+    borderAlt: string;
+    text: string;
+  };
 }
 ```
 
