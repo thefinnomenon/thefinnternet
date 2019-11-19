@@ -80,7 +80,7 @@ public class MainActivity extends ReactActivity {
 
 ## Define Types
 ```javascript
-// index.d.ts
+// types.ts
 
 export type ThemeMode = 'light' | 'dark';
 
