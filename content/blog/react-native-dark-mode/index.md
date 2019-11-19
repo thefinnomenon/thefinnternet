@@ -10,19 +10,19 @@ In this post we will be implementing light and dark mode in our React-Native app
 ![Project Demo](demo.gif "Project Demo")
 
 # Initialize Project
-```
+```shell
 npx react-native init lightSwitch --template react-native-template-typescript
 cd lightSwitch
 ```
 
-```
+```shell
 git init
 git add -A
 git commit -m "react-native init"
 ```
 
 # Add Styled-Components
-```
+```shell
 yarn add styled-components
 yarn add --dev @types/styled-components
 ```
@@ -31,12 +31,12 @@ yarn add --dev @types/styled-components
 ## Handle System Mode
 Currently React-Native doesn't have an API for checking if the device is set to dark mode so we need this library.
 
-```
+```shell
 yarn add react-native-appearance
 ```
 
 ### iOS
-```
+```shell
 cd ios/
 pod install
 cd ..
@@ -45,7 +45,7 @@ cd ..
 ### Android
 Add the uiMode flag
 
-```
+```xml
 // android/app/src/main/AndroidManifest.xml
 
 <activity
