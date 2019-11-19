@@ -11,7 +11,7 @@ One of the most important aspects of any application is navigation. Unless your 
 
 >**IMPORTANT NOTE**
 >
->**I currently can't get the gestures to work for the drawer so if you >need a drawer I would avoid upgrading to v5.**
+>**I currently can't get the gestures to work for the drawer so if you need a drawer I would avoid upgrading to v5.**
 
 # What are Navigators?
 The main concept behind React Navigation is navigators. The app will essentially be a chain of navigators that define the app's screens and flow between them. There are multiple navigation types and each has its configuration options.
