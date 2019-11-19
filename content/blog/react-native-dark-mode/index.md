@@ -51,7 +51,7 @@ Add the uiMode flag
 <activity
 ...
 android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode">
-Implement the onConfigurationChanged method in MainActivity.java:
+... >
 ```
 
 Implement the onConfigurationChanged method
