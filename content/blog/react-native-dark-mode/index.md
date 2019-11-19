@@ -184,3 +184,8 @@ const App = () => (
 
 export default App;
 ```
+
+# Conclusion
+Adding a light and dark mode to your app is pretty simple and adds a cool dynamic. It is also the hot, new thing to do so get to it!
+
+[Checkout This Project’s Code On Github](https://github.com/thefinnomenon/react-native-dark-mode)
