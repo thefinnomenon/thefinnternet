@@ -5,7 +5,7 @@ description: Is an app even really an app without dark mode? 🤔
 ---
 
 # Introduction
-In this post we will be implementing light and dark mode in our React-Native app using styled-components, context, and react-native-appearance. By the end of the post our app will default to the OS theme on start, update on OS theme change, and toggle light and dark based off of the switch. If a picture says a thousand words than a GIF says like a million or something so just look this GIF of what we will be making.
+In this post we will be implementing light and dark mode in our React-Native app using styled-components, context, and react-native-appearance. By the end of the post our app will default to the OS theme on start, update on OS theme change, and toggle light and dark based off of the switch. If a picture says a thousand words than a GIF says like a million or something so just look at this GIF of what we will be making.
 
 ![Project Demo](demo.gif "Project Demo")
 
