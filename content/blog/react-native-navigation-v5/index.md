@@ -7,7 +7,7 @@ description: Redoing my original navigation post with the new react-navigation v
 [Same post for react-navigation v4](https://thefinnternet.com/react-native-routing/)
 
 # Introduction
-One of the most important aspects of any application is navigation. Unless your application is truly one single screen, your user is going to have to click to navigate around and this requires a good navigation library. There are a few popular options in the React-Native world but the most popular, and the one recommended in Facebook’s React-Native documentation, is React Navigation. The library just underwent a huge rewrite with v5 which isn't a stable release yet but we will use this is the library throughout this post and cover how to use it for common navigation scenarios.
+One of the most important aspects of any application is navigation. Unless your application is truly one single screen, your user is going to have to click to navigate around and this requires a good navigation library. There are a few popular options in the React-Native world but the most popular, and the one recommended in Facebook’s React-Native documentation, is React Navigation. The library just underwent a huge rewrite with v5 which is currently in **alpha**. but we will use this is the library throughout this post and cover how to use it for common navigation scenarios.
 
 >**IMPORTANT NOTE**
 >
@@ -255,11 +255,13 @@ import { StackNavigationProp } from '@react-navigation/stack';
 import { ColorStackNavigatorParamList } from '../navigators/ColorStackNavigator';
 import { StyleSheet, View, Button } from 'react-native';
 
+// Make type for screen navigation props
 type ChooseColorScreenNavigationProp = StackNavigationProp<
   ColorStackNavigatorParamList,
   'ChooseColor'
 >;
 
+// Make type for screen props
 type Props = {
   navigation: ChooseColorScreenNavigationProp;
 };
@@ -289,8 +291,10 @@ import { RouteProp } from '@react-navigation/core';
 import { ColorStackNavigatorParamList } from '../navigators/ColorStackNavigator';
 import { View } from 'react-native';
 
+// Make type for screen route prop
 type ColorScreenRouteProp = RouteProp<ColorStackNavigatorParamList, 'Color'>;
 
+// Make type for screen props
 type Props = {
   route: ColorScreenRouteProp;
 };
@@ -311,11 +315,13 @@ import { DrawerNavigationProp } from '@react-navigation/drawer';
 import { DrawerNavigatorParamList } from '../navigators/DrawerNavigator';
 import { StyleSheet, View, Button } from 'react-native';
 
+// Make type for screen navigation props
 type DrawerScreenRouteProp = DrawerNavigationProp<
   DrawerNavigatorParamList,
   'Drawer'
 >;
 
+// Make type for screen props
 type Props = {
   navigation: DrawerScreenRouteProp;
 };
@@ -352,6 +358,8 @@ const OtherScreen = () => {
 > Currently the gesture-handler doesn't seem to be working so you can't slide the drawer out or tap it away. It is an ongoing issue so I will update when I find a solution.
 
 # Conclusion
-Navigation is really important for basically every app and thankfully React-Navigation makes quick, beautiful routing management and animated transitions a cinch. This post only covered the basics of how to use these main navigators but it should be enough to get you started. When you need to start styling your navigation bars, adding icons, or whatnot, head over to the beautiful React-Navigation documentation. As I mentioned in the post, gestures are currently not working on the DrawerNavigator. I will update the post when I find a solution.
+Navigation is really important for basically every app and thankfully React-Navigation makes quick, beautiful routing management and animated transitions a cinch. This post only covered the basics of how to use these main navigators but it should be enough to get you started. Even though v5 is in alpha right now, the only problem I have seen is the drawer gesture control. v5 adds a huge improvement in the structure of the navigators, making it more declarative and "Reacty". Also the Typescript support is much better with the types in v4 being hard to work with. 
+
+When you need to start styling your navigation bars, adding icons, or whatnot, head over to the beautiful React-Navigation documentation. As I mentioned in the post, gestures are currently not working on the DrawerNavigator. I will update the post when I find a solution.
 
 [Checkout This Project’s Code On Github](https://github.com/thefinnomenon/react-native-navigation-v5)
