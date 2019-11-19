@@ -56,7 +56,7 @@ android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode">
 
 Implement the onConfigurationChanged method
 
-```
+```java
 // android/app/src/main/java/com/<PROJECT_NAME>/MainActivity.java
 
 import android.content.Intent; // <--- import
@@ -166,7 +166,7 @@ export default ManageThemeProviderWrapper;
 ## Example Usage
 This is the example code behind the GIF at the top of this post. 
 
-```
+```javascript
 import React from 'react';
 import {Theme} from './types';
 import styled from 'styled-components/native';
