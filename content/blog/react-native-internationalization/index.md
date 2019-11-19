@@ -1,3 +1,9 @@
+---
+title: React-Native Internationalization
+date: "2019-11-19"
+description: Is your app ready to go global? 🌎
+---
+
 # Introduction
 Not every project needs internationalization but if you plan to have global customers, say if you were making a worldwide entertainement company, than you would need internationalization (i18n for short). For this, we will use the popular internationalization library **i18next**, its React wrapper library **react-i18next**, and **react-native-localize** to detect the device language.
 
