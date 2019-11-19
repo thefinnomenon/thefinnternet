@@ -12,7 +12,7 @@ cd lightSwitch
 ```
 git init
 git add -A
-git commit -m "react-natve init"
+git commit -m "react-native init"
 ```
 
 # Add Styled-Components
