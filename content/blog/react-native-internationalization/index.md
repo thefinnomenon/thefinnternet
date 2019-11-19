@@ -163,4 +163,4 @@ export default App;
 # Conclusion
 Internationalization isn't always needed but as you can see it's not too difficult to setup. There are advanced options for loading languages from the backend and whatnot but that is for another day. Now go out there and start a global company so you have an excuse to use it!
 
-[Checkout This Project’s Code On Github](https://thefinnternet.com/react-native-internationalization)
+[Checkout This Project’s Code On Github](https://github.com/thefinnomenon/react-native-internationalization)
